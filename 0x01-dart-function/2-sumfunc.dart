@@ -9,6 +9,6 @@ int sub(int a, int b) {
 String showFunc(int a, int b) {
   int sum = add(a, b);
   int diff = sub(a, b);
-  String output = "Add $a + $b = $sum" + "\n" + "Sub $a + $b = $diff";
+  String output = "Add $a + $b = $sum" + "\n" + "Sub $a - $b = $diff";
   return output;
 }
