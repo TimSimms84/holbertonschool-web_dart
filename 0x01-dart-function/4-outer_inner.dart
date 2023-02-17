@@ -1,0 +1,9 @@
+void outer(String name, String id)
+{
+  String inner(String name, String id)
+  {
+    return "Hello $name, your id is $id";
+  }
+
+  print(inner(name, id));
+}
