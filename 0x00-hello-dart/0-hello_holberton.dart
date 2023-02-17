@@ -5,5 +5,5 @@ this is the prefered
 multiline comment
 */ 
 void main() {
-	print("Hello Holberton!");
+	print("Hello Holberton!\n");
 }
