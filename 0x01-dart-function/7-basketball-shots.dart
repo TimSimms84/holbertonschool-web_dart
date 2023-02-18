@@ -8,18 +8,16 @@ int whoWins(Map<String, int> team1, Map<String, int> team2) {
   return 0;
 }
 
-Map<String, num> pointValues = {
+const pointValues = {
   'Free throws': 1,
   '2 pointers': 2,
   '3 pointers': 3,
 };
 
-num addPoints(Map<String, int> team) {
-  num sum = 0;
+int addPoints(Map<String, int> team) {
+  int sum = 0;
   for (var entry in team.entries) {
-    if (pointValues.containsKey(entry.key)) {
-      sum += entry.value * pointValues[entry.key]!;
-    }
+    sum += (pointValues[entry.key] ?? 0) * entry.value;
   }
   return sum;
 }
